@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet"
+    type="text/css"
+    href="start.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsaXEqvBUxERNNCZyhEhXWGRrV8ASHjkifYuf53gwHNhyGs0AGQ" alt="Diver Logo" class="logo">
+    </header>
+    <main>
+    <form role="form" action="/quiz" accept-charset="UTF-8" method="post" class="quiz-form">
+      <fieldset>
+        <legend>Question</legend>
+        <input class="question" type="radio" name="question-1" id="ans-great-1" value="0" checked>
+        <label for="ans-great-1">answer 1</label>
+        <br>
+        <input class="question" type="radio" name="question-2" id="ans-great-2" value="1">
+        <label for="ans-great-2">answer 2</label>
+        <br>
+        <input class="question" type="radio" name="question-3" id="ans-great-3" value="2">
+        <label for="ans-great-3">answer 3</label>
+        <input class="question" type="radio" name="question-4" id="ans-great-3" value="2">
+        <label for="ans-great-3">answer 4</label>
+        <button type="button" class="button">Start Quiz</button>
+        <ul>
+          <li>Questions: 3/5</li>
+          <li> Correct: 2</li>
+        </ul>
+      </fieldset>
+    </form>
+    </main>
+  </body>
+</html>
