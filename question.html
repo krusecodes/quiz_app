@@ -5,7 +5,7 @@
     <title>Quiz App</title>
     <link rel="stylesheet"
     type="text/css"
-    href="start.css" />
+    href="question.css" />
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
     <form role="form" action="/quiz" accept-charset="UTF-8" method="post" class="quiz-form">
       <fieldset>
         <legend>Question</legend>
-        <input class="question" type="radio" name="question-1" id="ans-great-1" value="0" checked>
+        <!-- <input class="question" type="radio" name="question-1" id="ans-great-1" value="0" checked>
         <label for="ans-great-1">answer 1</label>
         <br>
         <input class="question" type="radio" name="question-2" id="ans-great-2" value="1">
@@ -24,8 +24,24 @@
         <input class="question" type="radio" name="question-3" id="ans-great-3" value="2">
         <label for="ans-great-3">answer 3</label>
         <input class="question" type="radio" name="question-4" id="ans-great-3" value="2">
-        <label for="ans-great-3">answer 4</label>
-        <button type="button" class="button">Start Quiz</button>
+        <label for="ans-great-3">answer 4</label> -->
+        <label class="answerOption1">
+          <input type="radio" value="Answer 1" name="answer" required="">
+          <span>Answer 1</span>
+        </label>
+        <label class="answerOption2">
+          <input type="radio" value="Answer 2" name="answer" required="">
+          <span>Answer 2</span>
+        </label>
+        <label class="answerOption3">
+          <input type="radio" value="Answer 3" name="answer" required="">
+          <span>Answer 3</span>
+        </label>
+        <label class="answerOption4">
+          <input type="radio" value="Answer 4" name="answer" required="">
+          <span>Answer 4</span>
+        </label>
+        <button type="button" class="button">Submit</button>
         <ul>
           <li>Questions: 3/5</li>
           <li> Correct: 2</li>

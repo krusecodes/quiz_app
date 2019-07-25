@@ -28,6 +28,7 @@ html {
     padding: 0;
     border: 0;
     margin: 0;
+    display: block;
   }
 
   .quiz-form {
@@ -36,6 +37,7 @@ html {
     border-radius: 3px;
     background: white;
     margin: 0 auto;
+    display: block;
   }
 
   legend {
@@ -47,6 +49,22 @@ html {
     text-align: center;
     letter-spacing: 0;
     margin: 0 auto 45px;
+  }
+
+  .answerOption1 {
+    background: coral;
+  }
+
+  .answerOption2 {
+    background: coral;
+  }
+
+  .answerOption3 {
+    background: coral;
+  }
+
+  .answerOption4 {
+    background: coral;
   }
 
   .button[type="button"] {
@@ -63,7 +81,7 @@ html {
     transition: opacity 0.4s;
   }
 
-  .question {
+  /* .question {
     background-color: #f1f1f1;
     display: block;
     position: relative;
@@ -82,7 +100,22 @@ html {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
+  } */
+
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    /* line-height: 22px; */
+    height: auto;
+    position: relative;
+}
+
+
 
   .button[type="button"] {
     display: block;
