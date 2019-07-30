@@ -5,13 +5,6 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
-/* .bg {
-    background-image: url("https://images.unsplash.com/photo-1562766370-226f5648d946?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
 
   body {
     box-sizing: border-box;
@@ -49,7 +42,23 @@ html {
     margin: 0 auto 45px;
   }
 
-  .button[type="button"] {
+  .answerOption {
+    background: coral;
+  }
+
+  label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    height: auto;
+    position: relative;
+}
+
+  .startButton {
     display: block;
     width: 100%;
     height: auto;
@@ -63,7 +72,7 @@ html {
     transition: opacity 0.4s;
   }
 
-  .button[type="button"] {
+  .startButton {
     display: block;
     margin: auto;
     height: auto;

@@ -6,23 +6,28 @@
     <link rel="stylesheet"
     type="text/css"
     href="start.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsaXEqvBUxERNNCZyhEhXWGRrV8ASHjkifYuf53gwHNhyGs0AGQ" alt="Diver Logo" class="logo">
     </header>
     <main>
-      <!-- <div class="bg"></div> -->
-    <form role="form" action="/quiz" accept-charset="UTF-8" method="post" class="start-quiz-form">
+    <div class="beginQuiz">
+    <form role="form" action="/quiz" accept-charset="UTF-8" method="post" class="quiz-form">
       <fieldset>
         <legend>Think you have what it takes to swim with the fishes?</legend>
-        <button type="button" class="startbutton">Start Quiz</button>
+        <button type="button" class="startButton">Start Quiz</button>
         <ul>
           <li>Questions: <span class="questionNumber">0</span>/5</li>
           <li> Correct: <span class="score">0</span></li>
         </ul>
       </fieldset>
     </form>
+    </div>      
+    <div class="questionForm"></div>
     </main>
   </body>
 </html>

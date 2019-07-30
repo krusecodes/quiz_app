@@ -5,13 +5,6 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
-/* .bg {
-    background-image: url("https://images.unsplash.com/photo-1562766370-226f5648d946?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
 
   body {
     box-sizing: border-box;
@@ -51,10 +44,11 @@ html {
     margin: 0 auto 45px;
   }
 
-  .answerOption1 {
+  .answerOption {
     background: coral;
   }
-
+  
+/* 
   .answerOption2 {
     background: coral;
   }
@@ -65,7 +59,7 @@ html {
 
   .answerOption4 {
     background: coral;
-  }
+  } */
 
   .button[type="button"] {
     display: block;
@@ -81,27 +75,6 @@ html {
     transition: opacity 0.4s;
   }
 
-  /* .question {
-    background-color: #f1f1f1;
-    display: block;
-    position: relative;
-    padding: 10px 10px 10px 50px;
-    margin-bottom: 1px;
-    cursor: pointer;
-    font-size: 18px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    word-wrap: break-word;
-}
-
-.question input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  } */
-
 label {
     padding: 20px;
     margin-bottom: 10px;
@@ -110,7 +83,6 @@ label {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    /* line-height: 22px; */
     height: auto;
     position: relative;
 }
