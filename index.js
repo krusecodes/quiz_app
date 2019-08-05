@@ -31,15 +31,9 @@ function generateQuestion() {
       }" name="answer" required>
       <span>${STORE[questionNumber].answer[3]}</span>
       </label>
-      <label class="answerOption">
-      <input type="radio" value="${
-      STORE[questionNumber].answer[4]
-      }" name="answer" required>
-      <span>${STORE[questionNumber].answer[4]}</span>
-      </label>
       <input type="submit" id="submitButton" value="Submit" />
       <ul>
-        <li>Questions: ${questionNumber}/5</li>
+        <li>Questions: ${questionNumber + 1}/5</li>
         <li>Correct: ${score}</li>
       </ul>
       </fieldset>
@@ -53,12 +47,15 @@ function generateQuestion() {
 }
 
 function changeQuestionNumber() {
-    questionNumber++;
+  console.log(questionNumber);
+  // questionNumber++;
+  console.log(questionNumber);
   $(".questionNumber").text(questionNumber+1);
+  console.log(questionNumber);
 }
 
 function startQuiz() {
-  questionNumber++;
+  // questionNumber++;
   $(".startButton").click(function (event) {
     event.preventDefault();
     $(".beginQuiz").remove();
@@ -136,9 +133,9 @@ function correctQuizAnswer() {
   <form>
   <fieldset>
     <legend>Correct!</legend>
-    <button type="button" class="nextbutton">Next Question</button>
+    <button type="button" class="nextButton">Next Question</button>
     <ul>
-        <li>Questions: ${questionNumber}/5</li>
+        <li>Questions: ${questionNumber + 1}/5</li>
         <li> Correct: ${score}</li>
     </ul>
   </fieldset>
@@ -155,7 +152,7 @@ function wrongQuizAnswer() {
     <h2>The correct answer is: <span>"${correctAnswer}"</span></h2>
     <button type="button" class="nextButton">Next Question</button>
     <ul>
-        <li>Questions: ${questionNumber}/5</li>
+        <li>Questions: ${questionNumber + 1}/5</li>
         <li> Correct: ${score}</li>
     </ul>
   </fieldset>
@@ -174,12 +171,13 @@ function userSelectAnswer() {
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
     if (answer === correctAnswer) {
       $(".quiz-form").html(correctQuizAnswer());
-      score++;
+      // score++;
     } else {
       console.log("supsup");
       $(".quiz-form").html(wrongQuizAnswer());
     }
     renderNextQuestion();
+    questionNumber++;
   });
 }
 
@@ -188,7 +186,7 @@ function renderNextQuestion() {
   $(".nextButton").click(function (event) {
     event.preventDefault();
     renderQuestion();
-    userSelectAnswer();
+    // userSelectAnswer();
     generateQuestion();
     changeQuestionNumber();
   });

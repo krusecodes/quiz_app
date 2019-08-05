@@ -7,7 +7,7 @@ const STORE = [
         'Boys cat drown',
         'Baboos could dance'
         ],
-        correctAnswer: 'Buoyancy compensator device',
+        correctAnswer: 'Buoyancy Compensator Device',
     },
     {
         question: 'What is the most important rule of diving?',
