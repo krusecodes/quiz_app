@@ -193,18 +193,26 @@ function renderNextQuestion() {
 }
 
 function renderResults(){
-  if (score = 5){
+  if (score === 5){
     $('.questionForm').html(`<div class="resultsFeedback">
+    <form>
+    <fieldset>
     <h2>You're on fire!</h2>
     <p>You got ${score} / 5</p><p>You're ready to swim with the fishes!</p>
     <button class="restartButton">Restart Quiz</button>
+    </fieldset>
+    </form>
     </div>`);
   }
   else {
     $('.questionForm').html(`<div class="resultsFeedback">
+    <form>
+    <fieldset>
     <h2>Almost There</h2>
     <p>You got ${score} / 5</p><p>You're ready to swim with the fishes!</p>
     <button class="restartButton">Restart Quiz</button>
+    </fieldset>
+    </form>
     </div>`);
   }
 }
