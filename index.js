@@ -209,7 +209,7 @@ function renderResults(){
     <form>
     <fieldset>
     <h2>Almost There</h2>
-    <p>You got ${score} / 5</p><p>You're ready to swim with the fishes!</p>
+    <p>You got ${score} / 5</p><p>You're not ready to swim with the fishes!</p>
     <button class="restartButton">Restart Quiz</button>
     </fieldset>
     </form>
